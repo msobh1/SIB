@@ -1,22 +1,27 @@
+import { Link } from "react-router-dom";
+import { menuItems } from "./menuItems";
 import "./Navbarstyles.css";
 import React, { Component } from "react";
-class navbar extends Component{
+class Navbar extends Component{
     render(){
         return(
-            <div className="navbar">
-                <div className="navbar__logo">
-                   
-                </div>
-                <div className="navbar__menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+            <nav className="NavbarItems">
+                <h1 className="NavbarLogo">SIB</h1>
+                <ul className="nav-menu">
+                    
+                    {menuItems.map((item,index)=>{
+                        return(
+                            <li key={index}>
+                            <Link className={item.cName} to={item.url}><i className={item.icon}></i>{item.title}</Link>
+                            </li>
+                        )
+
+                    })}
+                    
+                </ul>
+
+            </nav>
         )
     }
 } 
-export default navbar;
+export default Navbar;

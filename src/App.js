@@ -5,6 +5,7 @@ import Register from './pages/register';
 import Admin from './pages/admin';
 import Banker from './pages/banker';
 import User from './pages/user';
+import Home from './pages/home';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/banker" element={<Banker />} />
           <Route path="/user" element={<User />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </div>
