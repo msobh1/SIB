@@ -10,6 +10,10 @@ import AboutUs from './pages/aboutUs';
 import Account from './pages/account';
 import CustomerSupport from './pages/customerSupport';
 import PersonalInfo from './pages/personalinfo';
+import News from './pages/news';
+import LoansNews from './pages/loansNews';
+import CertificateNews from './pages/certificateNews';
+import PointsRewards from './pages/pointsRewards';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/customerSupport" element={<CustomerSupport />} />
           <Route path="/personalinfo" element={<PersonalInfo />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/loansNews" element={<LoansNews />} />
+          <Route path="/certificateNews" element={<CertificateNews />} />
+          <Route path="/pointsRewards" element={<PointsRewards />} />
         </Routes>
       </Router>
     </div>
