@@ -1,8 +1,9 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 function PersonalInfo() {
   return (
     <div>
-      <h1>Personal Info</h1>
+      <Navbar />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 function CustomerSupport() {
     return (
         <div>
-            <h1>Customer Support</h1>
+           <Navbar/>
         </div>
     );
 }
