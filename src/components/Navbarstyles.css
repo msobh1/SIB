@@ -48,9 +48,34 @@
 .nav-links i{
     margin-right: 0.3rem;
 }
+.nav-links i2{
+    margin-left:0.3rem;
+}
 .nav-links:hover{
     background-color: lightsalmon;
     color: #fff;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
+}
+.dropdown-menu{
+    display: inline-block;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: -7rem;
+    background-color: transparent;
+    list-style: none;
+    width: auto;
+    z-index: 1;
+}
+.dropdown-menu li{
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+.dropdown-links{
+    color: #000;
+    text-decoration: none;
 }

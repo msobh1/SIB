@@ -3,7 +3,8 @@ export const menuItems = [
         title: 'services',
         url: '/services',
         cName: 'nav-links',
-        icon : "fa-solid fa-briefcase"
+        icon : "fa-solid fa-briefcase",
+        icon2 : "fa-solid fa-angle-down"
     },
     {
         title: 'Account',

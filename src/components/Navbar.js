@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { menuItems } from "./menuItems";
 import logo from "../images/logo.jpg";
-import "./Navbarstyles.css"; 
+import "./Navbarstyles.css";
+import { serviceDropDownItems } from "./serviceDropDownItems";
 
 class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      scrolled: false
+      scrolled: false,
+      isServicesDropdownOpen: false
     };
   }
 
@@ -29,8 +31,14 @@ class Navbar extends Component {
     }
   };
 
+  handleServicesDropdownToggle = () => {
+    this.setState((prevState) => ({
+      isServicesDropdownOpen: !prevState.isServicesDropdownOpen
+    }));
+  };
+
   render() {
-    const { scrolled } = this.state;
+    const { scrolled, isServicesDropdownOpen } = this.state;
     const navbarClasses = `NavbarItems ${scrolled ? "scrolled" : ""}`;
 
     return (
@@ -42,9 +50,24 @@ class Navbar extends Component {
         <ul className="nav-menu">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <Link className={item.cName} to={item.url}>
+              <Link
+                className={item.cName}
+                to={item.url}
+                onMouseEnter={item.title === "services" ? this.handleServicesDropdownToggle : null}
+                onMouseLeave={item.title === "services" ? this.handleServicesDropdownToggle : null}
+              >
                 <i className={item.icon}></i>
                 {item.title}
+                <i2 className={item.icon2}></i2>
+                {item.title === "services" && isServicesDropdownOpen && (
+                  <ul className="dropdown-menu">
+                    {serviceDropDownItems.map((dropdownItem, dropdownIndex) => (
+                      <li key={dropdownIndex}>
+                        <Link className={dropdownItem.cName} to={dropdownItem.url}>{dropdownItem.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </Link>
             </li>
           ))}
