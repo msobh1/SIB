@@ -8,15 +8,5 @@ export const serviceDropDownItems = [
         title:'Loans',
         url: '/loans',
         cName: 'dropdown-links',
-    },
-    {
-        title:'Bill Pay',
-        url: '/billPay',
-        cName: 'dropdown-links',
-    },
-    {
-        title:'Reminders',
-        url: '/reminders',
-        cName: 'dropdown-links',
     }
 ]

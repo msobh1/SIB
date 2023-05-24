@@ -53,13 +53,13 @@ class Navbar extends Component {
               <Link
                 className={item.cName}
                 to={item.url}
-                onMouseEnter={item.title === "services" ? this.handleServicesDropdownToggle : null}
-                onMouseLeave={item.title === "services" ? this.handleServicesDropdownToggle : null}
+                onMouseEnter={item.title === "Account" ? this.handleServicesDropdownToggle : null}
+                onMouseLeave={item.title === "Account" ? this.handleServicesDropdownToggle : null}
               >
                 <i className={item.icon}></i>
                 {item.title}
                 <i2 className={item.icon2}></i2>
-                {item.title === "services" && isServicesDropdownOpen && (
+                {item.title === "Account" && isServicesDropdownOpen && (
                   <ul className="dropdown-menu">
                     {serviceDropDownItems.map((dropdownItem, dropdownIndex) => (
                       <li key={dropdownIndex}>

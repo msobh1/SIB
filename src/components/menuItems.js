@@ -4,13 +4,13 @@ export const menuItems = [
         url: '/services',
         cName: 'nav-links',
         icon : "fa-solid fa-briefcase",
-        icon2 : "fa-solid fa-angle-down"
     },
     {
         title: 'Account',
         url: '/account',
         cName: 'nav-links',
-        icon : "fa-solid fa-user-circle"
+        icon : "fa-solid fa-wallet",
+        icon2 : "fa-solid fa-angle-down"
     },
     {
         title: 'About Us',

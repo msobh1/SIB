@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/hero";
-import "../pages/userstyles.css";
 import Explore from "../components/explore";
 import Userbar from "../components/userbar";
 
