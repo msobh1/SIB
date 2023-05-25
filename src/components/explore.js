@@ -14,12 +14,12 @@ function Explore() {
       <div className="square">
         <h1>Loans</h1>
         <p>Discover our flexible loan options for your financial needs.</p>
-        <Link className="explore" to="/loansNews">Explore</Link>
+        <Link className="explore" to="/loan">Explore</Link>
         </div>
       <div className="square">
         <h1>Certificates</h1>
         <p>Explore our certificate options for secure savings and investments.</p>
-        <Link className="explore" to="/certificateNews">Explore</Link>
+        <Link className="explore" to="/certificate">Explore</Link>
         </div>
       <div className="square">
         <h1>Points & Rewards</h1>

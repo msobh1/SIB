@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./serviceComponentsSyles.css";
- function ServiceComponents() {
+
+ 
+function ServiceComponents() {
     return(
         <div className="servicePage">
            <div className="servicesComponents">
@@ -22,7 +24,7 @@ import "./serviceComponentsSyles.css";
                 <Link className="services-links" to="/loan">Loans</Link>
                 <p>This panel enables users track loans and apply for new ones instantly</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">Apply for loan</Link>
+                    <Link className="options-links" to="/loan">Apply for loan</Link>
                     <Link className="options-links" to="/creditCard">Track loan</Link>
                     <Link className="options-links" to="/creditCard">Pay loan</Link>
                 </div>
@@ -34,7 +36,7 @@ import "./serviceComponentsSyles.css";
                 <Link className="services-links" to="/certificate">Certificates</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">Apply for Certificate</Link>
+                    <Link className="options-links" to="/certificate">Apply for Certificate</Link>
                 </div>
             </div>
             
@@ -43,7 +45,7 @@ import "./serviceComponentsSyles.css";
                 <Link className="services-links" to="/bills">Bills</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">Pay bill</Link>
+                    <button className="pay=button">Pay bill</button>
                 </div>
             </div>
             <div className="servicess">

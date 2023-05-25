@@ -14,6 +14,8 @@ import News from './pages/news';
 import LoansNews from './pages/loansNews';
 import CertificateNews from './pages/certificateNews';
 import PointsRewards from './pages/pointsRewards';
+import Certificate from './pages/certificate';
+import Loan from './pages/loan';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/loansNews" element={<LoansNews />} />
           <Route path="/certificateNews" element={<CertificateNews />} />
           <Route path="/pointsRewards" element={<PointsRewards />} />
+          <Route path="/certificate" element={<Certificate />} />
+          <Route path="/loan" element={<Loan />} />
         </Routes>
       </Router>
     </div>
