@@ -1,0 +1,11 @@
+.pay-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+    width: 80%;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}

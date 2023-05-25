@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./serviceComponentsSyles.css";
+import {PayModal} from "./payModal";
 
  
 function ServiceComponents() {
+    const[openPayModal,setOpenPayModal]=useState(false);
     return(
         <div className="servicePage">
            <div className="servicesComponents">
@@ -45,7 +47,7 @@ function ServiceComponents() {
                 <Link className="services-links" to="/bills">Bills</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <button className="pay=button">Pay bill</button>
+                    <button className="pay=button" onClick={()=>{setOpenPayModal(true)}}>Pay bill</button>
                 </div>
             </div>
             <div className="servicess">
@@ -61,10 +63,11 @@ function ServiceComponents() {
                 <Link className="services-links" to="/reminders">Donating</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">Donate</Link>
+                <button className="pay=button" onClick={()=>{setOpenPayModal(true)}}>Donate</button>
                 </div>
             </div>
            </div>
+            {openPayModal && <PayModal title="hababe" openPayModal={openPayModal} setOpenPayModal={setOpenPayModal}/>}
         </div>
     );
  }
