@@ -51,16 +51,33 @@
     gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
     padding-top: 0;
+    position: relative;
+    top: -80%;
+    left: 50%;
     width:400px ;
-    height: auto;
+    height: 700px;
     place-items: center;
     background-color: white;
+    box-shadow: 5px 5px 15px 5px rgb(0, 0, 0 ,0.25);
+    border-radius: 10px;
     margin: 0 auto;
 }
 .loan-modal-buttons{
     display: flex;
     gap: 2rem;
     margin-left: 10px;
+}
+.loan-modal-btn-apply{
+    background-color:lightsalmon ;
+}
+.loan-modal-btn-cancel{
+    background-color: lightsalmon;
+}
+.loan-modal-btn-apply:hover{
+    background-color: lightsalmon;
+}
+.loan-modal-btn-cancel:hover{
+    background-color: lightsalmon;
 }
 .loan-modal-inputs{
     display: grid;
