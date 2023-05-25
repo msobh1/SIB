@@ -6,7 +6,6 @@
 .servicesComponents{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* justify-content: center; */
     align-items: center;
     place-items: center;
     width: 100%;
@@ -68,4 +67,53 @@
     top: -100%;
     left: -25%;
     transition: all 0.5s ease-in-out;
+}
+.pay-main-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 0;
+    position: relative;
+    top: -80%;
+    left: 0%;
+    width:400px ;
+    height: 450px;
+    place-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgb(0, 0, 0 ,0.25);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.pay-modal-inputs{
+    display: grid;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    top: -20%;
+}
+.select-option{
+    height: 50px;
+}
+.pay-title{
+    width: 100%;
+    background-color:lightsalmon;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: -20%;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+.pay-modal-buttons{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    align-items: center;
+    left: 16%;
+    top: 100%;
+}
+.pay-modal-buttons button{
+    width: 30%;
+    background-color: lightsalmon;
 }

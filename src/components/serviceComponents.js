@@ -6,6 +6,8 @@ import {PayModal} from "./payModal";
  
 function ServiceComponents() {
     const[openPayModal,setOpenPayModal]=useState(false);
+     const[data,setData]=useState(null);
+   
     return(
         <div className="servicePage">
            <div className="servicesComponents">
@@ -47,7 +49,7 @@ function ServiceComponents() {
                 <Link className="services-links" to="/bills">Bills</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <button className="pay=button" onClick={()=>{setOpenPayModal(true)}}>Pay bill</button>
+                    <button className="pay-button" onClick={()=>{setOpenPayModal(true);setData("PAY BILLS")}}>Pay bill</button>
                 </div>
             </div>
             <div className="servicess">
@@ -63,11 +65,11 @@ function ServiceComponents() {
                 <Link className="services-links" to="/reminders">Donating</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                <button className="pay=button" onClick={()=>{setOpenPayModal(true)}}>Donate</button>
+                <button className="pay=button" onClick={()=>{setOpenPayModal(true);setData("DONATIONS")}}>Donate</button>
                 </div>
             </div>
            </div>
-            {openPayModal && <PayModal title="hababe" openPayModal={openPayModal} setOpenPayModal={setOpenPayModal}/>}
+            {openPayModal && <PayModal data={data} openPayModal={openPayModal} setOpenPayModal={setOpenPayModal}/>}
         </div>
     );
  }
