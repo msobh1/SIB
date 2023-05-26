@@ -18,7 +18,7 @@ export const userbarItems = [
         icon : "fa-solid fa-dollar-sign"
     },
     {
-        title: 'SIB Points',
+        title: 'Report techinacal issue',
         url: '/points',
         cName: 'userbar-links',
         icon : "fa-solid fa-briefcase"

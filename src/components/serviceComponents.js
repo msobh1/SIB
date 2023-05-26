@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./serviceComponentsSyles.css";
 import {PayModal} from "./payModal";
+import {ReminderModal} from "./reminderModal"
 
  
 function ServiceComponents() {
     const[openPayModal,setOpenPayModal]=useState(false);
-     const[data,setData]=useState(null);
+    const[openReminderModal,setOpenReminderModal]=useState(false);
+    const[data,setData]=useState(null);
    
     return(
         <div className="servicePage">
@@ -17,9 +19,7 @@ function ServiceComponents() {
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
                     <Link className="options-links" to="/creditCard">apply for a new credit card</Link>
-                    <Link className="options-links" to="/creditCard">View</Link>
-                    <Link className="options-links" to="/creditCard">apply</Link>
-                    <Link className="options-links" to="/creditCard">apply</Link>
+                    <Link className="options-links" to="/creditCard">Mange credit cards</Link>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@ function ServiceComponents() {
                 <div className="options">
                     <Link className="options-links" to="/loan">Apply for loan</Link>
                     <Link className="options-links" to="/creditCard">Track loan</Link>
-                    <Link className="options-links" to="/creditCard">Pay loan</Link>
+                    <button className="pay-button" onClick={()=>{setOpenPayModal(true);setData("loan")}}>Pay loan</button>
                 </div>
 
             </div>
@@ -57,7 +57,7 @@ function ServiceComponents() {
                 <Link className="services-links" to="/reminders">Reminders</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">Set a reminder</Link>
+                <button className="set-button" onClick={()=>{setOpenReminderModal(true);}}>Set reminder</button>
                 </div>
             </div>
             <div className="servicess">
@@ -65,11 +65,12 @@ function ServiceComponents() {
                 <Link className="services-links" to="/reminders">Donating</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                <button className="pay=button" onClick={()=>{setOpenPayModal(true);setData("DONATIONS")}}>Donate</button>
+                <button className="pay-button" onClick={()=>{setOpenPayModal(true);setData("DONATIONS")}}>Donate</button>
                 </div>
             </div>
            </div>
             {openPayModal && <PayModal data={data} openPayModal={openPayModal} setOpenPayModal={setOpenPayModal}/>}
+            {openReminderModal && <ReminderModal openReminderModal={openReminderModal} setOpenReminderModal={setOpenReminderModal}/>}
         </div>
     );
  }
