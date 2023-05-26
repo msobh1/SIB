@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/card";
 import CardHistory from "../components/cardHistory";
 import PayCard from "../components/payCard";
+import "./creditcardstyles.css";
 
 function CreditCard(){
     return(

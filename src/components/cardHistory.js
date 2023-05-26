@@ -38,28 +38,28 @@ function CardHistory(){
             <div className="transaction-title">
                 Transactions history
             </div>
-           <div className="transaction-table-container">
-      <table className="transaction-table">
-        <thead>
-          <tr>
-            <th>Receiver</th>
-            <th>Type</th>
-            <th>Date</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {transactions.map((transaction, index) => (
-            <tr key={index}>
-              <td>{transaction.receiver}</td>
-              <td>{transaction.type}</td>
-              <td>{transaction.date}</td>
-              <td>{transaction.amount}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+           <div className="ttc">
+                <table className="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Receiver</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {transactions.map((transaction, index) => (
+                            <tr key={index}>
+                                <td>{transaction.receiver}</td>
+                                <td>{transaction.type}</td>
+                                <td>{transaction.date}</td>
+                                <td>{transaction.amount}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 }
