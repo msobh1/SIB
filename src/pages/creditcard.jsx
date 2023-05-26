@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Card from "../components/card"
+import Card from "../components/card";
+import CardHistory from "../components/cardHistory";
+import PayCard from "../components/payCard";
 
 function CreditCard(){
     return(
         <div className="credit-card">
             <Navbar/>
-            <Card/>
+            <Card/> 
+            <CardHistory/>   
+            <PayCard/>
         </div>
     );
 }
