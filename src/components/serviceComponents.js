@@ -21,7 +21,7 @@ function ServiceComponents() {
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
                 <button className="pay-button" onClick={()=>{setOpenCreditCardModal(true);}}>Apply for a new credit Card</button>
-                    <Link className="options-links" to="/creditCard">Mange credit cards</Link>
+                    <Link className="options-links" to="/creditcard">Mange credit cards</Link>
                 </div>
             </div>
 
