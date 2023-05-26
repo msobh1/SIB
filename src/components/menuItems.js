@@ -10,13 +10,6 @@ export const menuItems = [
         url: '/account',
         cName: 'nav-links',
         icon : "fa-solid fa-wallet",
-        icon2 : "fa-solid fa-angle-down"
-    },
-    {
-        title: 'About Us',
-        url: '/aboutUs',
-        cName: 'nav-links',
-        icon : "fa-solid fa-circle-info"
     },
     {
         title: 'Customer Support',
@@ -29,5 +22,11 @@ export const menuItems = [
         url: '/personalinfo',
         cName: 'nav-links',
         icon : "fa-solid fa-user"
-    }
+    },
+    // {
+    //     title:"",
+    //     url:"",
+    //     cName: 'nav-links',
+    //     icon : "fa-solid fa-angle-down"
+    // }
 ]

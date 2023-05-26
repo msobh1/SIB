@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import "./serviceComponentsSyles.css";
 import {PayModal} from "./payModal";
 import {ReminderModal} from "./reminderModal"
+import { CreditCardModal } from "./creditCardModal";
 
  
 function ServiceComponents() {
     const[openPayModal,setOpenPayModal]=useState(false);
     const[openReminderModal,setOpenReminderModal]=useState(false);
+    const[OpenCreditCardModal,setOpenCreditCardModal]=useState(false);
     const[data,setData]=useState(null);
    
     return(
@@ -18,7 +20,7 @@ function ServiceComponents() {
                 <Link className="services-links" to='/creditCard'>Credit Card</Link>
                 <p>Manage all you credit cards clearily in one place</p>
                 <div className="options">
-                    <Link className="options-links" to="/creditCard">apply for a new credit card</Link>
+                <button className="pay-button" onClick={()=>{setOpenCreditCardModal(true);}}>Apply for a new credit Card</button>
                     <Link className="options-links" to="/creditCard">Mange credit cards</Link>
                 </div>
             </div>
@@ -71,6 +73,7 @@ function ServiceComponents() {
            </div>
             {openPayModal && <PayModal data={data} openPayModal={openPayModal} setOpenPayModal={setOpenPayModal}/>}
             {openReminderModal && <ReminderModal openReminderModal={openReminderModal} setOpenReminderModal={setOpenReminderModal}/>}
+            {OpenCreditCardModal && <CreditCardModal OpenCreditCardModal={OpenCreditCardModal}  setOpenCreditCardModal={setOpenCreditCardModal}/>}
         </div>
     );
  }
