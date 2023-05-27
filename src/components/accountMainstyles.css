@@ -1,0 +1,10 @@
+.account-main{
+    width: 72%;
+    height: 230px;
+    position: absolute;
+    border-radius: 15px;
+    z-index: -1;
+    top: 13%;
+    left: 28%;
+    background-color: aqua;
+}
