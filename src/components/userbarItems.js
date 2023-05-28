@@ -19,7 +19,7 @@ export const userbarItems = [
     },
     {
         title: 'Report techinacal issue',
-        url: '/points',
+        url: '/report',
         cName: 'userbar-links',
         icon : "fa-solid fa-briefcase"
     },

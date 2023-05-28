@@ -13,7 +13,9 @@ import News from './pages/news';
 import PointsRewards from './pages/pointsRewards';
 import Certificate from './pages/certificate';
 import Loan from './pages/loan';
-import CreditCard from "./pages/creditcard"
+import CreditCard from "./pages/creditcard";
+import FAQs from './pages/FAQs';
+import Report from './pages/report';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/certificate" element={<Certificate />} />
           <Route path="/loan" element={<Loan />} />
           <Route path="/creditcard" element={<CreditCard />} />
+          <Route path="/FAQs" element={<FAQs />} />
+          <Route path="/report" element={<Report />} />
         </Routes>
       </Router>
     </div>

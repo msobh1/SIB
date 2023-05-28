@@ -5,6 +5,12 @@
     z-index: -1;
     
 }
+.points-hero{
+    width: 100%;
+    height: 400px;
+    position:relative;
+    z-index: -1;
+}
  img{
     width: 100%;
     height: 100%;

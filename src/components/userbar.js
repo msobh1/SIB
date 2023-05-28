@@ -3,8 +3,19 @@ import { userbarItems } from "./userbarItems";
 import { Link } from "react-router-dom";
 import "./userbarsytles.css";
 import { Component } from "react";
+import FAQComponent from "./faq";
+
 
 class Userbar extends Component {
+    state = {
+        isFAQVisible: false
+      };
+      handleFAQClick = () => {
+        this.setState(prevState => ({
+          isFAQVisible: !prevState.isFAQVisible
+        }));
+      };
+            
     render() {
         return (
             <nav className="userbar">
