@@ -10,7 +10,6 @@
     width: 49.5%;
     height: 100%;
     border-radius: 15px;
-    background-color: aqua;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0 ,0.25);
 }
 .transfer{
@@ -20,6 +19,63 @@
     width: 49.5%;
     height: 100%;
     border-radius: 15px;
-    background-color: aqua;
     box-shadow: 0 5px 15px 0 rgb(0, 0, 0 ,0.25);
+}
+.accbalance i{
+    position: relative;
+    top: 1%;
+    left: 80%;
+    color: rgb(174, 176, 179);
+}
+.accbalance label{
+    position: relative;
+    top: 1.5%;
+    left: 80%;
+    color: rgb(174, 176, 179);
+}
+.accbalance hh{
+    padding-left: 10px;
+    display: grid;
+    gap: 10px;
+    color: rgb(174, 176, 179);
+    font-size: 20px;
+}
+.accbalance pp2{
+    color: lightsalmon;
+}
+.closeAcc{
+    background-color: lightsalmon;
+    border-radius: 15px;
+    position: relative;
+    left: 72%;
+    top: -5%;
+}
+.radios{
+    display: flex;
+    align-items: center;
+}
+.main-accTitle{
+
+}
+.ttt{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+.tttt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.tttt2{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+.transferr{
+    position: relative;
+    top: -5%;
+    left: 40%;
+    background-color: lightsalmon;
+    border-radius: 10px;
 }
