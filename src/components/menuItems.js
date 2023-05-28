@@ -12,21 +12,20 @@ export const menuItems = [
         icon : "fa-solid fa-wallet",
     },
     {
-        title: 'Customer Support',
-        url: '/customerSupport',
-        cName: 'nav-links',
-        icon : "fa-solid fa-address-book"
-    },
-    {
         title: 'Personal Info',
         url: '/personalinfo',
         cName: 'nav-links',
         icon : "fa-solid fa-user"
     },
-    // {
-    //     title:"",
-    //     url:"",
-    //     cName: 'nav-links',
-    //     icon : "fa-solid fa-angle-down"
-    // }
+    {
+        title: '',
+        url: '',
+        cName: 'nav-links',
+        icon : "fa-solid fa-bell"
+    },
+    {
+        title: 'Logout',
+        url: '/',
+        cName: 'nav-links',
+    },
 ]

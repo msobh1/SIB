@@ -58,20 +58,22 @@
     transition: all 0.2s ease-in-out;
 }
 .dropdown-menu{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
     position: absolute;
-    margin-top: 2rem;
-    margin-left: -7rem;
-    background-color: transparent;
+    left: 45%;
+    top: 8%;
+    padding: 10px;
+    background-color: white;
     list-style: none;
-    width: auto;
+    border-radius: 15px;
     z-index: 1;
 }
 .dropdown-menu li{
-    text-align: center;
-    padding: 0.5rem 0.5rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    width: 100%; 
+    padding-top: 20px;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
