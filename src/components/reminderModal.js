@@ -1,6 +1,9 @@
 import React from "react";
 
 export const ReminderModal=({openReminderModal,setOpenReminderModal})=>{
+    const showAlert = (message) => {
+        alert(message);
+      };
     return(
         <div className="reminder-container">
             <div className="reminder-title">
@@ -24,7 +27,7 @@ export const ReminderModal=({openReminderModal,setOpenReminderModal})=>{
                 <label for desc>DESCREBTION</label>
                 <input className="desc" type="text" placeholder="DESCREBTION(OPTIONAL)"/>
                 <div className="reminder-modal-buttons">
-                <button className="reminder-modal-btn-set" onClick={() => setOpenReminderModal(!openReminderModal)}>set</button>
+                <button className="reminder-modal-btn-set" onClick={() => {setOpenReminderModal(!openReminderModal);showAlert("reminder done")}}>set</button>
                 <button className="reminder-modal-btn-cancel" onClick={() => setOpenReminderModal(!openReminderModal)}>Cancel</button>
                 </div>
             </div>

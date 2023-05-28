@@ -1,7 +1,9 @@
 import React from "react";
-
 export const PayModal =(props)=>{
     const{openPayModal,setOpenPayModal}=props;
+    const showAlert = (message) => {
+        alert(message);
+      };
     return(
         <div className="pay-main-container">
             <div className="pay-title">
@@ -21,7 +23,7 @@ export const PayModal =(props)=>{
                 <label for describtion>describtion</label>
                 <input className="describtion" type="text" placeholder="PAYMENT DESCRIBTION"/>
                 <div className="pay-modal-buttons">
-                <button className="pay-modal-btn-pay" onClick={() => setOpenPayModal(!openPayModal)}>Pay</button>
+                <button className="pay-modal-btn-pay" onClick={() => {setOpenPayModal(!openPayModal);showAlert("done")}}>Pay</button>
                 <button className="pay-modal-btn-cancel" onClick={() => setOpenPayModal(!openPayModal)}>Cancel</button>
                 </div>
                 </div>}
@@ -33,7 +35,7 @@ export const PayModal =(props)=>{
                 <label for describtion>describtion</label>
                 <input className="describtion" type="text" placeholder="PAYMENT DESCRIBTION"/>
                 <div className="pay-modal-buttons">
-                <button className="pay-modal-btn-pay" onClick={() => setOpenPayModal(!openPayModal)}>Pay</button>
+                <button className="pay-modal-btn-pay" onClick={() => {setOpenPayModal(!openPayModal);showAlert("transaction done")}}>Pay</button>
                 <button className="pay-modal-btn-cancel" onClick={() => setOpenPayModal(!openPayModal)}>Cancel</button>
                 </div>
             </div> }
@@ -45,7 +47,7 @@ export const PayModal =(props)=>{
                 <label for describtion>Additional Information (optional)</label>
                 <input className="describtion" type="text" placeholder="Additional Information"/>
                 <div className="pay-modal-buttons">
-                <button className="pay-modal-btn-pay" onClick={() => setOpenPayModal(!openPayModal)}>Pay</button>
+                <button className="pay-modal-btn-pay" onClick={() => {setOpenPayModal(!openPayModal);showAlert("loan payment done")}}>Pay</button>
                 <button className="pay-modal-btn-cancel" onClick={() => setOpenPayModal(!openPayModal)}>Cancel</button>
                 </div>
             </div> }

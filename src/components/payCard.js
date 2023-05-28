@@ -3,6 +3,9 @@ import { useState } from "react";
 import "../components/payCardstyles.css";
 
 function PayCard(){
+    const showAlert = (message) => {
+        alert(message);
+      };
     const [paymentType, setPaymentType] = useState("full");
     const [partialAmount, setPartialAmount] = useState("");
   
@@ -56,7 +59,7 @@ function PayCard(){
                             />
                         )}
                         <br />
-                        <input type="submit" value="pay"  className="ccpay-button"/>
+                        <input type="submit" value="pay" onClick={() => showAlert("credit card payment done")} className="ccpay-button"/>
                     </form>
                 </div>
             </div>
