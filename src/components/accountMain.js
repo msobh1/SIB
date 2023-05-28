@@ -36,7 +36,7 @@ function AccountMain(){
                     Transfer money
                 </div>
                 <div className="radios">
-                Internal
+                <ppp>Internal</ppp>
                 <input
                 type="radio"
                 value="internal"
@@ -44,7 +44,7 @@ function AccountMain(){
                 onChange={handleOptionChange}
                 />
                 <br />
-                Domestic
+                <ppp>Domestic</ppp>
                 <input
                 type="radio"
                 value="domestic"
@@ -59,7 +59,7 @@ function AccountMain(){
                     </div>
                 )}
                 <br />
-                International
+                <ppp>International</ppp>
                 <input
                     type="radio"
                     value="international"
@@ -74,13 +74,13 @@ function AccountMain(){
                         <input className="tttt2" type="text" />
                         <br />
                         Country:
-                        <input className="tttt2" type="text" />
+                        <input className="tttt3" type="text" />
                     </div>
                 )}
                 <br />
                 <div className="tt">
                 Amount:
-                <input className="ttt" type="text" />
+                <input className="ttt2" type="text" />
                 <br />
                 Account ID:
                 <input className="ttt" type="text" />

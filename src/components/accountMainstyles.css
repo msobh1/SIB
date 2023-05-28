@@ -14,6 +14,7 @@
 }
 .transfer{
     position: relative;
+    padding-left: 10px;
     top: -100%;
     left: 50%;
     width: 49.5%;
@@ -53,18 +54,23 @@
 .radios{
     display: flex;
     align-items: center;
-}
-.main-accTitle{
-
+    color: rgb(174, 176, 179);
 }
 .ttt{
     border-radius: 10px;
     width: 100px;
     height: 40px;
 }
+.ttt2{
+    position: relative;
+    left: 4%;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
 .tttt{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
 }
 .tttt2{
@@ -72,9 +78,16 @@
     width: 100px;
     height: 40px;
 }
+.tttt3{
+    position: relative;
+    left: 14%;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
 .transferr{
     position: relative;
-    top: -5%;
+    top: 3%;
     left: 40%;
     background-color: lightsalmon;
     border-radius: 10px;
