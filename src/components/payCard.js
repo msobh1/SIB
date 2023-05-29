@@ -68,7 +68,7 @@ function PayCard(){
             </div>
 
             <div className="reporting">
-                <button className="lost-stolen">Report lost/stolen</button>
+                <button onClick={()=>showAlert("done")} className="lost-stolen">Report lost/stolen</button>
             </div>
             
         </div>

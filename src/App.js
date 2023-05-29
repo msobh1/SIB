@@ -19,6 +19,7 @@ import Report from './pages/report';
 import LoanRequests from './pages/loanRequests';
 import CardRequests from './pages/cardRequests';
 import ManageAccounts from './pages/manageAccounts';
+import AdminReports from './pages/adminreports';
 function App() {
   return (
     <div className="main">
@@ -43,6 +44,7 @@ function App() {
           <Route path="/manageAccounts" element={<ManageAccounts />} />
           <Route path="/cardRequests" element={<CardRequests />} />
           <Route path="/loanRequests" element={<LoanRequests />} />
+          <Route path="/adminReports" element={<AdminReports />} />
         </Routes>
       </Router>
     </div>

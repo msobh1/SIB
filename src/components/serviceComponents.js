@@ -31,7 +31,6 @@ function ServiceComponents() {
                 <p>This panel enables users track loans and apply for new ones instantly</p>
                 <div className="options">
                     <Link className="options-links" to="/loan">Apply for loan</Link>
-                    <Link className="options-links" to="/creditCard">Track loan</Link>
                     <button className="pay-button" onClick={()=>{setOpenPayModal(true);setData("loan")}}>Pay loan</button>
                 </div>
 

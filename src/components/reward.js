@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./rewards.css"
 
 const Rewards = () => {
+  const showAlert = (message) => {
+    alert(message);
+  };
   const [selectedButton, setSelectedButton] = useState('');
   const [showButtons, setShowButtons] = useState(true);
 
@@ -50,6 +53,7 @@ const Rewards = () => {
             Amount of Points:
             <input type="text" />
           </label>
+          <button onClick={()=>showAlert("done")}>Redeem</button>
         </div>
       )}
       {selectedButton === 'vouchers' && !showButtons && (
@@ -73,6 +77,7 @@ const Rewards = () => {
             Amount:
             <input type="text" />
           </label>
+          <button onClick={()=>showAlert("done")}>Redeem</button>
         </div>
       )}
     </div>
