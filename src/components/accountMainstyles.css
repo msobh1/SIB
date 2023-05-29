@@ -92,3 +92,11 @@
     background-color: lightsalmon;
     border-radius: 10px;
 }
+.looan{
+    position: absolute;
+    overflow: hidden;
+    width:1450px;
+    height: 2000px;
+    top: 45%;
+    left: 0%;
+}
