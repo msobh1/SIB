@@ -1,6 +1,9 @@
 import React from "react";
 
 export const CreditCardModal = ({ OpenCreditCardModal, setOpenCreditCardModal }) => {
+    const showAlert = (message) => {
+        alert(message);
+      };
     return (
         <div className="creditcard-main-container">
             <div className="creditcard-modal-inputs">
@@ -18,7 +21,7 @@ export const CreditCardModal = ({ OpenCreditCardModal, setOpenCreditCardModal })
                 <input type="text"  placeholder="EMAIL" />
             </div>
             <div className="creditcard-modal-buttons">
-            <button className="creditcard-modal-btn-apply" onClick={() => setOpenCreditCardModal(!OpenCreditCardModal)}>Apply</button>
+            <button className="creditcard-modal-btn-apply" onClick={() => {setOpenCreditCardModal(!OpenCreditCardModal);showAlert("form submitted")}}>Apply</button>
             <button className="creditcard-modal-btn-cancel" onClick={() => setOpenCreditCardModal(!OpenCreditCardModal)}>Cancel</button>
             </div>
         </div>

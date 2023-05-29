@@ -1,6 +1,9 @@
 import React from "react";
 
 export const LoanModal = ({ OpenLoanModal, setOpenLoanModal }) => {
+    const showAlert = (message) => {
+        alert(message);
+      };
     return (
         <div className="loan-main-container">
             <div className="loan-modal-inputs">
@@ -18,7 +21,7 @@ export const LoanModal = ({ OpenLoanModal, setOpenLoanModal }) => {
                 <input type="number"  placeholder="LOAN DURATION" />
             </div>
             <div className="loan-modal-buttons">
-            <button className="loan-modal-btn-apply" onClick={() => setOpenLoanModal(!OpenLoanModal)}>Apply</button>
+            <button  className="loan-modal-btn-apply" onClick={() => {setOpenLoanModal(!OpenLoanModal);showAlert("form submitted")}}>Apply</button>
             <button className="loan-modal-btn-cancel" onClick={() => setOpenLoanModal(!OpenLoanModal)}>Cancel</button>
             </div>
         </div>

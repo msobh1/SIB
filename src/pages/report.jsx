@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./report.css"
 function Report(){
+    const showAlert = (message) => {
+        alert(message);
+      };
     return(
         <div className="report">
             <Navbar/>
@@ -12,7 +15,7 @@ function Report(){
                 <div className="describe">
                     Describe your problem
                     <input type="text"className="issue" />
-                    <button className="report-button">Report</button>
+                    <button onClick={()=>showAlert("report submitted")} className="report-button">Report</button>
                 </div>
             </div>
         </div>

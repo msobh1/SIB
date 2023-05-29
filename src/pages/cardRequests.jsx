@@ -2,6 +2,9 @@ import React from "react";
 import "./cardRequestsstyles.css"
 
 function CardRequests(){
+  const showAlert = (message) => {
+    alert(message);
+  };
     const cardRequests=[
         { id: 1, name: "John Doe", requestDate: "2023-05-26" },
         { id: 2, name: "Jane Smith", requestDate: "2023-05-27" },
@@ -41,8 +44,8 @@ function CardRequests(){
             <td>{request.name}</td>
             <td>{request.requestDate}</td>
             <td>
-              <button >Approve</button>
-              <button>Reject</button>
+              <button onClick={()=>showAlert("Approved")} >Approve</button>
+              <button onClick={()=>showAlert("rejected")}>Reject</button>
             </td>
           </tr>
         ))}
