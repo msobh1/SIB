@@ -8,17 +8,17 @@ function Banker() {
 
       <section>
         <h2>Loan Requests</h2>
-        <Link to="loanRequests">View Loan Requests</Link>
+        <Link to="/loanRequests">View Loan Requests</Link>
       </section>
 
       <section>
         <h2>Credit Card Requests</h2>
-        <Link to="cardRequests">View Credit Card Requests</Link>
+        <Link to="/cardRequests">View Credit Card Requests</Link>
       </section>
 
       <section>
         <h2>Accounts Management</h2>
-        <Link to="manageAccounts">Manage Accounts</Link>
+        <Link to="/manageAccounts">Manage Accounts</Link>
       </section>
     </div>
   )

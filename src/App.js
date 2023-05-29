@@ -16,7 +16,9 @@ import Loan from './pages/loan';
 import CreditCard from "./pages/creditcard";
 import FAQs from './pages/FAQs';
 import Report from './pages/report';
-
+import LoanRequests from './pages/loanRequests';
+import CardRequests from './pages/cardRequests';
+import ManageAccounts from './pages/manageAccounts';
 function App() {
   return (
     <div className="main">
@@ -38,6 +40,9 @@ function App() {
           <Route path="/creditcard" element={<CreditCard />} />
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/manageAccounts" element={<ManageAccounts />} />
+          <Route path="/cardRequests" element={<CardRequests />} />
+          <Route path="/loanRequests" element={<LoanRequests />} />
         </Routes>
       </Router>
     </div>
